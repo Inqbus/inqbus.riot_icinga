@@ -3,11 +3,6 @@ inqbus.riot_icinga
 
 Example hot to send Icinga messages to a matrix client e.g. riot.
 
-Status
-------
-
-Work in Progress, not tested, yet.
-
 Requirements
 ------------
 
