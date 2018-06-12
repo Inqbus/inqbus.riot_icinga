@@ -38,6 +38,7 @@ command_line_not_required = {
     '-ip6': 'HOSTADDRESS6 (\$address6\$)',
     '-b': 'NOTIFICATIONAUTHORNAME (\$notification.author\$)',
     '-c': 'NOTIFICATIONCOMMENT (\$notification.comment\$)',
+    '-so': 'SERVICEOUTPUT (\$service.output$\)',
 }
 
 for x in command_line_required.keys():
@@ -94,6 +95,8 @@ if args.c:
     message += 'Comment: {c}; '.format(c=args.c)
 if args.b:
     message += 'Comment by: {b}; '.format(b=args.b)
+if args.so:
+    message += 'Service Output: {so}; '.format(so=args.so)
 
 print(message)
 
